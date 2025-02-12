@@ -12,11 +12,21 @@
             color: #e0e0e0;
             margin: 0;
             padding: 0;
-            background-image: url('https://source.unsplash.com/1920x1080/?technology,code,computer');
+            background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
         header {
             text-align: center;
